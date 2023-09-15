@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am [Your Name], a [Your Profession].</p>
+    </section>
+            <h2>My Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <div class="carousel-item">
+                        Project 1
+                    </div>
+                    <div class="carousel-item">
+                        Project 2
+                    </div>
+                    <div class="carousel-item">
+                        Project 3
+                    </div>
+                    <!-- Add as many projects as you want in the above format -->
+                </div>
+            </div>
+            <button class="carousel-button prev">←</button>
+            <button class="carousel-button next">→</button>
+        </section>
+        
+        <h2>About Me</h2>
+        <p>Some information about you.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at [your@email.com].</p>
+    </section>
+    <footer>
+        <p>© 2023 Your Name</p>
+    </footer>
+</body>
+
+</html>

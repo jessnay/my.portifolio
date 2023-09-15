@@ -1,0 +1,127 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, rgb(242, 238, 235), rgb(217, 173, 119));  /* Sleek gradient */
+    color: rgb(10, 13, 12);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(191, 139, 94);
+    transition: color 0.2s, transform 0.2s;
+}
+
+a:hover {
+    color: rgb(166, 77, 45);
+    transform: scale(1.1);  /* Gentle zoom on hover */
+}
+
+/* Floating Vertical Menu */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;  /* Adjust as needed */
+    background-color: rgba(10, 13, 12, 0.9);  /* Slightly transparent for a modern touch */
+    padding: 50px 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 30px;
+    font-weight: 600;  /* Bold menu items */
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: translateX(10px);  /* Slight shift to right on hover */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+h1 {
+    font-size: 2.5em;  /* Larger for emphasis */
+}
+
+h2 {
+    font-size: 2em;
+}
+
+section {
+    margin-left: 260px;  /* To account for the floating menu */
+    padding: 100px 10%;  /* Generous padding for a spacious feel */
+}
+
+footer {
+    background-color: rgb(89, 36, 24);
+    color: rgb(242, 238, 235);
+    padding: 50px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(191, 139, 94);
+    color: rgb(10, 13, 12);
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Gentle shadow for depth */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: rgb(166, 77, 45);
+    transform: translateY(-5px);  /* Button raises slightly on hover */
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        position: static;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    section {
+        margin-left: 0;
+    }
+}
